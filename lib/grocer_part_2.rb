@@ -77,21 +77,21 @@ def apply_clearance(cart)
   end
 end
 
-# def checkout(cart, coupons)
+def checkout(cart, coupons)
   
-#   consolidated_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
+  consolidated_cart = apply_clearance(apply_coupons(consolidate_cart(cart), coupons))
 
-#   checkout_total = 0
-#   consolidated_cart.each do |cart_item|
-#     checkout_total += cart_item[:price] * cart_item[:count]
-#   end
+  checkout_total = 0
+  consolidated_cart.each do |cart_item|
+    checkout_total += cart_item[:price] * cart_item[:count]
+  end
 
-#   if checkout_total >= 100
-#     checkout_total *= 0.9
-#   end
+  if checkout_total >= 100
+    checkout_total *= 0.9
+  end
   
-#   checkout_total.round(2)
-# end
+  checkout_total.round(2)
+end
 
 def checkout(cart, coupons)
   
