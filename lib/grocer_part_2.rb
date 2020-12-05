@@ -91,5 +91,7 @@ def checkout(cart, coupons)
     checkout_total += cart_item[:price] * cart_item[:count]
   end
 
-  checkout_total
+  if checkout_total >= 100
+    checkout_total *= .9
+  end
 end
