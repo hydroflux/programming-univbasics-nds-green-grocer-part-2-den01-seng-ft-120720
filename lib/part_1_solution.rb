@@ -22,8 +22,7 @@ def consolidate_cart(cart)
       find_item_by_name_in_collection(name, consolidated_cart)[:count] += 1
     end
   end
-  
-  binding.pry
+
   consolidated_cart
 end
 
