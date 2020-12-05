@@ -18,6 +18,7 @@ def consolidate_cart(cart)
     if !consolidated_cart.include? item
       item[:count] = 1  
       consolidated_cart << item
+      binding.pry
     else
       name = item[:item]
       find_item_by_name_in_collection(name, consolidated_cart)[:count] += 1
