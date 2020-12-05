@@ -88,7 +88,7 @@ def checkout(cart, coupons)
 
   binding.pry
   checkout_total = 0
-  cart.each do |cart_item|
+  consolidated_cart.each do |cart_item|
     checkout_total += cart_item[:price] * cart_item[:count]
   end
 
