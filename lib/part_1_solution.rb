@@ -14,6 +14,7 @@ def consolidate_cart(cart)
   consolidated_cart = []
   
   cart.each do |item|
+    binding.pry
     if !consolidated_cart.include? item
       item[:count] = 1  
       consolidated_cart << item
