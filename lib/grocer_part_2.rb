@@ -17,8 +17,6 @@ def apply_coupons(cart, coupons)
           :clearance => cart_item[:clearance],
           :count => active_coupon[:num]
         }
-        # 
-        # binding.pry
         
         # Add item with discount to updated cart
         cart << discount_item
