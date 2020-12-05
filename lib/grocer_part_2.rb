@@ -82,15 +82,15 @@ def apply_clearance(cart)
 end
 
 def checkout(cart, coupons)
-  binding.pry
+  # binding.pry
   
   consolidate_cart(cart)
-  binding.pry
+  # binding.pry
   apply_coupons(cart, coupons)
-  binding.pry
+  # binding.pry
   apply_clearance(cart)
   
-  binding.pry
+  # binding.pry
   
   checkout_total = 0
   cart.each do |cart_item|
