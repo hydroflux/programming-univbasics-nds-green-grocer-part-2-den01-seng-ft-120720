@@ -60,7 +60,6 @@ end
 #           cart_item << updated_cart
 #         end
         
-#         # binding.pry
 #       else
 #         updated_cart << cart_item
 #       end
