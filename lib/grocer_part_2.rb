@@ -85,7 +85,7 @@ def checkout(cart, coupons)
   # binding.pry
   
   consolidate_cart(cart)
-  # binding.pry
+  binding.pry
   apply_coupons(cart, coupons)
   # binding.pry
   apply_clearance(cart)
